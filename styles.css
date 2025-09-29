@@ -312,6 +312,15 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
+.clickable-card {
+    cursor: pointer;
+}
+
+.clickable-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
 .product-icon {
     width: 64px;
     height: 64px;
