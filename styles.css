@@ -5,16 +5,27 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
+    --primary-blue: #2589fb;
+    --primary-red: #f42200;
+    --primary-green: #03d952;
+    --primary-yellow: #ffb400;
+    --primary-pink: #ff91c9;
+    --error-red: #CF3F4C;
+    --warning-yellow: #C99500;
+    --success-green: #687C00;
+    --info-blue: #4D5F9C;
+
+    /* Updated color mappings */
+    --primary-color: var(--primary-blue);
+    --primary-dark: var(--info-blue);
     --secondary-color: #64748b;
     --text-dark: #0f172a;
     --text-light: #475569;
     --background: #ffffff;
     --background-light: #f8fafc;
     --border-color: #e2e8f0;
-    --success-color: #10b981;
-    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --success-color: var(--primary-green);
+    --gradient: linear-gradient(135deg, var(--primary-blue) 0%, var(--info-blue) 100%);
 }
 
 body {
@@ -110,7 +121,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--gradient);
     position: relative;
     overflow: hidden;
 }
@@ -326,7 +337,7 @@ body {
 }
 
 .coming-soon .badge {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--gradient);
 }
 
 .product-card p {
