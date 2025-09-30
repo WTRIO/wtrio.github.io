@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedyDocs AI - Scan & Sort Your Documents | Wtrio</title>
+    <script src="https://waitlister.me/js/embed.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -897,18 +898,7 @@
                 <h2>Join the Waitlist</h2>
                 <p>Be among the first to experience the future of document management</p>
             </div>
-            <div class="waitlist-form">
-                <form>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
-                        We'll notify you when SpeedyDocs AI is ready to launch. No spam, ever.
-                    </p>
-                </form>
-            </div>
+            <div class="waitlister-form" data-waitlist-key="zYQ_mYIattWI" data-height="197px"></div>
         </div>
     </section>
 
@@ -1011,15 +1001,6 @@
             });
         });
 
-        // Waitlist form handling (placeholder)
-        const waitlistForm = document.querySelector('.waitlist-form form');
-        waitlistForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            // This is where you would integrate with your backend
-            alert('Thank you for joining the waitlist! We\'ll be in touch soon.');
-            this.reset();
-        });
     </script>
 </body>
 </html>
