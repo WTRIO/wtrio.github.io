@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — SpeedyDocs</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #2589fb;
+            --primary-red: #f42200;
+            --primary-green: #03d952;
+            --primary-yellow: #ffb400;
+            --primary-pink: #ff91c9;
+            --error-red: #CF3F4C;
+            --warning-yellow: #C99500;
+            --success-green: #687C00;
+            --info-blue: #4D5F9C;
+            --text-dark: #0f172a;
+            --text-light: #475569;
+            --background: #ffffff;
+            --background-light: #f8fafc;
+            --border-color: #e2e8f0;
+            --gradient: linear-gradient(135deg, var(--primary-blue) 0%, var(--info-blue) 100%);
+            --warm-gradient: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-red) 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand h1 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--warm-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Privacy Container */
+        .privacy-container {
+            max-width: 900px;
+            margin: 6rem auto 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .privacy-container h1 {
+            margin-bottom: 0.25rem;
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .privacy-meta {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .privacy-container h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .privacy-container h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .privacy-container p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .privacy-container ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-container li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        .privacy-container li strong {
+            color: var(--text-dark);
+        }
+
+        .highlight-box {
+            background: #fff5f5;
+            border-left: 4px solid var(--error-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .privacy-note {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-size: 1rem;
+            border: 2px solid var(--primary-blue);
+            cursor: pointer;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-blue);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 137, 251, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .privacy-container {
+                margin: 5rem 1rem 2rem;
+                padding: 1.5rem;
+            }
+
+            .privacy-container h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-container h2 {
+                font-size: 1.3rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" style="text-decoration: none; color: inherit;"><h1>Wtrio</h1></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="privacy-container">
+        <h1>Privacy Policy for SpeedyDocs</h1>
+        <p class="privacy-meta"><strong>Last Updated:</strong> October 29, 2025</p>
+
+
+        <h2>1. Introduction</h2>
+        <p>W Trio Limited ("WTrio," "we," "us," or "our") operates the SpeedyDocs mobile application (also referred to as "SpeedyDocs AI") (the "App"). This Privacy Policy explains how we collect, use, disclose, and protect information when you use our App.</p>
+        <p>We are committed to protecting your privacy. <strong>A core principle of SpeedyDocs is to minimize data collection and prioritize on-device processing for your documents.</strong></p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect information in the following ways:</p>
+
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Account Information:</strong> When you create an account, we collect your email address and a secure, encrypted password (or a token from a third-party sign-in provider like Apple or Google). This is used for authentication and account management.</li>
+            <li><strong>Subscription Information:</strong> If you purchase a subscription, your payment is processed by a third-party payment processor (e.g., Apple App Store, RevenueCat). We do not collect or store your credit card details. We receive transaction details, such as the purchase date, subscription type, and a unique subscriber ID, which we use to manage your subscription status.</li>
+            <li><strong>Support Communications:</strong> If you contact us for support, we collect the content of your communication and your contact information to respond to your request.</li>
+        </ul>
+
+        <h3>B. Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Usage Data:</strong> We may collect non-personal, aggregated data about how the App is accessed and used, such as the frequency of use, features accessed, and general performance data. This data is anonymized and used solely for the purpose of improving the App.</li>
+            <li><strong>Device Information:</strong> We collect basic, non-identifying information about your mobile device, such as the operating system version, device type, and app version, to ensure compatibility and diagnose technical issues.</li>
+        </ul>
+
+        <h3>C. Information from Third Parties</h3>
+        <p>We use third-party service providers to help us operate, provide, and improve the App. These services may collect data according to their own privacy policies:</p>
+        <ul>
+            <li><strong>Authentication and Data Storage Providers:</strong> We use secure, industry-standard third-party services for user authentication, account management, and backend data storage. These providers may collect email addresses, secure authentication tokens, user metadata, and synced document metadata (not document content).</li>
+            <li><strong>Subscription Management Providers:</strong> We use third-party services to manage subscriptions and process payments (e.g., Apple App Store). These providers may collect transaction details, subscription status, and unique user identifiers.</li>
+            <li><strong>Analytics and Performance Providers:</strong> We may use third-party analytics services to help us understand how the App is used and to improve performance. These services collect anonymized usage data and device information.</li>
+        </ul>
+        <p>All third-party service providers are carefully selected and required to maintain appropriate security measures and comply with applicable data protection laws. <strong>We do not share the content of your documents with any third-party service providers.</strong></p>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+            <li><strong>To Provide and Maintain the App:</strong> To operate the App, manage your account, and provide the core scanning and organization services.</li>
+            <li><strong>To Process Subscriptions:</strong> To process your payments and manage your subscription access.</li>
+            <li><strong>To Improve the App:</strong> To understand usage trends, analyze performance, and develop new features.</li>
+            <li><strong>To Communicate with You:</strong> To respond to your support requests and send you important service announcements.</li>
+            <li><strong>For Security:</strong> To prevent fraud and ensure the security of the App.</li>
+        </ul>
+
+        <h2>4. Document Data and On-Device Processing</h2>
+        <div class="privacy-note">
+            <p><strong>Your documents and the content extracted from them (e.g., OCR text, AI categories) are processed primarily on your device using Apple's Vision and Core ML frameworks.</strong></p>
+        </div>
+        <ul>
+            <li><strong>On-Device Processing:</strong> This means that your sensitive document content <strong>does not leave your device</strong> for processing. All OCR (Optical Character Recognition) and AI-powered categorization happens locally on your device.</li>
+            <li><strong>Cloud Storage (Optional):</strong> If you choose to enable cloud synchronization or backup features, document metadata (such as file names, categories, tags, and dates) may be stored on our backend infrastructure using third-party cloud service providers. However, <strong>the actual content of your documents is not uploaded to our servers</strong> unless you explicitly enable a cloud backup feature (if available).</li>
+            <li><strong>Data Storage:</strong> We use secure, industry-standard cloud service providers to store user account information, subscription data, and optional document metadata. We may change or add service providers as needed to improve performance, reliability, or features. All service providers are required to maintain appropriate security measures and comply with applicable data protection laws.</li>
+            <li><strong>Minimal Data Retention:</strong> We do not have access to the content of your documents. Your documents are stored locally on your device's secure storage. If you delete the App, your locally stored documents will be deleted unless you have manually backed them up or enabled cloud backup features.</li>
+        </ul>
+
+        <h2>5. Disclosure of Your Information</h2>
+        <p>We do not sell your personal information. We may disclose your information only in the following situations:</p>
+        <ul>
+            <li><strong>With Your Consent:</strong> We may disclose your personal information for any purpose with your explicit consent.</li>
+            <li><strong>For Business Transfers:</strong> In connection with any merger, sale of company assets, financing, or acquisition of all or a portion of our business.</li>
+            <li><strong>Legal Requirements:</strong> If required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency).</li>
+            <li><strong>To Enforce Our Rights:</strong> To enforce our Terms and Conditions and protect the rights, property, and safety of WTrio, our users, or others.</li>
+        </ul>
+
+        <h2>6. Your Data Protection Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> The right to request copies of your personal data.</li>
+            <li><strong>Right to Rectification:</strong> The right to request that we correct any information you believe is inaccurate.</li>
+            <li><strong>Right to Erasure:</strong> The right to request that we erase your personal data, under certain conditions.</li>
+            <li><strong>Right to Object:</strong> The right to object to our processing of your personal data, under certain conditions.</li>
+            <li><strong>Right to Data Portability:</strong> The right to request that we transfer the data we have collected to another organization, or directly to you, under certain conditions.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us using the information in Section 8.</p>
+
+        <h2>7. Security of Your Information</h2>
+        <p>We use commercially acceptable means to protect your personal information, including:</p>
+        <ul>
+            <li>Encryption of data in transit and at rest</li>
+            <li>Secure authentication mechanisms</li>
+            <li>Regular security audits and updates</li>
+            <li>Access controls and monitoring</li>
+        </ul>
+        <p>However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p><strong>W Trio Limited (WTrio)</strong><br>
+        New Zealand<br>
+        Hello@wtriotech.com<br>
+        wtriotech.com</p>
+
+        <p style="margin-top:2rem;"><a href="index.html" class="btn btn-outline">Return to Home</a></p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Wtrio</h3>
+                    <p>Building Tomorrow's Software Today</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/speedydocs-privacy.html">Privacy Policy</a>
+                    <a href="/speedydocs-terms.html">Terms of Service</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 W Trio Limited. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
